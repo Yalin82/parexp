@@ -1,0 +1,22 @@
+.law ul {
+   border-top: 1px solid #ededed;
+   font-size: 1.2em;
+   line-height: 1.2em;
+   list-style: none;
+   margin: 0;
+   padding: 10px;
+   color: #333;
+   z-index: 0;
+}
+
+.law .Annot{
+	   position: relative;
+	   padding: 10px 33px 13px 3px;
+	   border-bottom: 1px dotted #566c95;
+           color:#999999;
+           font-size:11px;
+           font-weight:bold;
+	}
+.law .News p{
+           margin-bottom: 0;
+		}

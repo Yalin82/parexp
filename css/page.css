@@ -1,0 +1,126 @@
+.pagenav a { text-decoration: none; }
+.pagenav td { padding: 2px 4px 2px 4px; }
+.maintable {
+	
+        border-collapse: separate;
+        border-spacing:0px;
+        padding: 10px;
+        font-family: Verdana;
+}
+
+.maintable td{
+        font-family: Verdana;
+}
+
+.tborder{	
+	background: #D1D1E1;	
+	color: #000000;	
+	border: 1px solid #0B198C;
+	margin-bottom: 5px;
+	margin-top: 5px;
+        border-collapse: separate;
+        border-spacing:2px;
+	font-size: 8pt;
+        margin-left: 10px;
+}
+
+.vbmenu_control
+	{	
+	background: #738FBF;	
+	color: #FFFFFF;	
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;	
+	padding: 3px 6px 3px 6px;	
+	white-space: nowrap;
+	}
+.vbmenu_control a:link, .vbmenu_control_alink
+	{	
+	text-decoration: none;
+	}
+.vbmenu_control a:visited, .vbmenu_control_avisited
+	{	
+	text-decoration: none;
+	}
+.vbmenu_control a:hover, .vbmenu_control a:active, .vbmenu_control_ahover
+	{	
+	color: #FFFFFF;	
+	text-decoration: underline;
+	}
+.alt1, .alt1Active
+	{	
+	background: #F5F5FF;
+	color: #000000;
+	}
+.alt2, .alt2Active
+	{	
+	background: #E1E4F2;
+	color: #000000;
+	}
+.smallfont
+	{	
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	}
+
+a, a:link, a:visited, a:hover {
+	color: #000000;
+	text-decoration: none;
+a:hover {
+	color: #000000;
+}
+
+.vbmenu_popup{	
+	background: #FFFFFF;	
+	color: #000000;	
+	border: 1px solid #0B198C;
+	}
+.thead{	
+	background: #5C7099 url("gradient_thead.gif")/*tpa=http://spb.arbitr.ru/css/gradient_thead.gif*/ repeat-x top left;	
+	color: #FFFFFF;	
+	font: bold 11px tahoma, verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	}
+.thead a:link, .thead_alink
+	{	
+	color: #FFFFFF;
+	}
+.thead a:visited, .thead_avisited
+	{	
+	color: #FFFFFF;
+	}
+.thead a:hover, .thead a:active, .thead_ahover
+	{	
+	color: #FFFF00;
+}
+.vbmenu_option{	
+	background: #BBC7CE;	
+	color: #000000;	
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;	
+	white-space: nowrap;	
+	cursor: pointer;
+	}
+.vbmenu_option a:link, .vbmenu_option_alink
+	{	
+	color: #22229C;	
+	text-decoration: none;
+	}
+.vbmenu_option a:visited, .vbmenu_option_avisited
+	{	
+	color: #22229C;	
+	text-decoration: none;
+	}
+.vbmenu_option a:hover, .vbmenu_option a:active, .vbmenu_option_ahover
+	{	
+	color: #FFFFFF;	
+	text-decoration: none;
+	}
+textarea, .bginput
+	{	
+	font: 10pt verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	}
+.bginput option, .bginput optgroup
+	{	
+	font-size: 10pt;	
+	font-family: verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+}
+.button		
+	{	
+	font: 11px verdana, geneva, lucida, 'lucida grande', arial, helvetica, sans-serif;
+	}

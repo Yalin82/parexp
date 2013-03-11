@@ -1,0 +1,218 @@
+html body header {
+	height: 150px;
+	background: #099;
+	color: #fff;
+	padding-top: 10px
+}
+
+html body header .logo {
+	position: relative;
+	float: left;
+	top: 30px;
+	left: 50px;
+	background: url("../images/logo2.png");
+	width: 254px;
+	height: 63px
+}
+
+html body header .title {
+	height: 90px;
+	margin: 10px;
+	border-top: 1px solid #fff;
+	padding-right: 200px;
+	text-align: right;
+	line-height: 26px
+}
+
+html body header .title .company_name {
+	font-family: Century;
+	font-size: 21px;
+	font-weight: bold
+}
+
+html body header .title .phone {
+	font-family: Century;
+	font-size: 19px
+}
+
+html body header .title .email {
+	font-family: Century;
+	font-size: 19px
+}
+
+html body header .dvorec {
+	position: relative;
+	right: 10px;
+	height: 95px;
+	width: 158px;
+	float: right;
+	top: 13px;
+	background-image: url("../images/dvorec.png")
+}
+
+html body header .running_line {
+	height: 25px;
+	margin: 10px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-family: Calibri;
+	font-size: 19px;
+	font-weight: bold;
+	font-style: italic
+}
+
+html body article {
+	margin-top: 10px
+}
+
+html body article .left_panel .menu {
+	background: #099;
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px 15px
+}
+
+html body article .left_panel .menu h3 {
+	font-family: Calibri;
+	font-size: 19px;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 15px;
+	text-transform: uppercase;
+	cursor: pointer
+}
+
+html body article .left_panel .menu h3 a {
+	color: #fff;
+	text-decoration: none
+}
+
+html body article .left_panel .menu h3 a :hover {
+	text-decoration: none
+}
+
+html body article .left_panel .menu div {
+	font-family: Calibri;
+	font-size: 17px;
+	font-weight: bold
+}
+
+html body article .left_panel .menu div ul {
+	list-style: none
+}
+
+html body article .left_panel .menu div ul li {
+	padding-bottom: 5px
+}
+
+html body article .left_panel .menu div ul li a {
+	color: #fff
+}
+
+html body article .left_panel .menu div ul li a :hover {
+	color: #fff
+}
+
+html body article .left_panel .info_block {
+	background: #099;
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px;
+	margin-top: 15px
+}
+
+html body article .left_panel .info_block .cert_example h4 {
+	font-family: Calibri;
+	font-size: 19px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center
+}
+
+html body article .left_panel .info_block .cert_example .cert_image {
+	text-align: center;
+	min-height: 200px
+}
+
+html body article .left_panel .info_block .weather_block .booked-bl-simple-city, html body article .left_panel .info_block .weather_block .booked-bl-simple-date, html body article .left_panel .info_block .weather_block .booked-bl-simple-week-list-day, html body article .left_panel .info_block .weather_block .booked-bl-simple-see10 {
+	font-family: "Times New Roman";
+	font-size: 13px !important
+}
+
+html body article .left_panel .info_block .weather_block .bookew-weather-copy {
+	display: none
+}
+
+html body article .left_panel .info_block .currency_rate_block {
+	text-align: center
+}
+
+html body article .content {
+	font-family: "Times New Roman";
+	font-size: 13px;
+	line-height: 16px;
+	text-indent: 20px
+}
+
+html body article .content h3 {
+	font-weight: bold;
+	text-align: center;
+	line-height: 18px;
+	font-size: 16px
+}
+
+html body article .content ul {
+	list-style-position: inside
+}
+
+html body article .right_panel .news {
+	color: #fff;
+	background: #099;
+	border-radius: 10px;
+	padding: 10px 15px;
+	font-family: Calibri
+}
+
+html body article .right_panel .news h3 {
+	text-align: center;
+	font-size: 19px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 15px;
+	text-transform: uppercase
+}
+
+html body article .right_panel .news .news_block {
+	margin: 10px 5px
+}
+
+html body article .right_panel .news .news_block .date {
+	display: block
+}
+
+html body article .right_panel .news .news_block a {
+	color: #fff;
+	font-size: 13px;
+	line-height: 16px
+}
+
+html body article .right_panel .images_block {
+	text-align: center
+}
+
+html body article .right_panel .images_block img {
+	padding: 10px 5px
+}
+
+html body footer {
+	background: #099;
+	color: #fff;
+	height: 40px;
+	margin-top: 5px
+}
+
+html body footer .copy {
+	text-align: right;
+	line-height: 40px;
+	padding: 0 10px
+}

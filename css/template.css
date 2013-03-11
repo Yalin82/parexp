@@ -1,0 +1,368 @@
+body,td,p,h1,h2,h3 {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 12pt;
+}
+body {
+	text-align:center;
+	margin: 0px;
+	padding: 0px;
+	background: #ffffff;
+	color: #000000;
+        min-width:1100px;
+}
+
+.top_table  {
+		border-right:2px solid #FFFFFF;
+}
+
+/*GROUP Границы, цветовые панели*/
+.bl {
+	border-left: 1px solid #e1d8d2;
+}
+.br {
+	border-right: 1px solid #e1d8d2;
+}
+.bt {
+	border-top: 1px solid #e1d8d2;
+}
+.bb {
+	border-bottom: 1px solid #e1d8d2;
+}
+.b1 {
+	border: 1px solid #000000;
+}
+.b2 {
+	border: 1px solid #e1d8d2;
+}
+.panel {
+	background: #eeeeee;
+}
+.warning { color: #cc0000; }
+.gray {
+	color: #999999;
+}
+
+
+p {
+	margin: 0px;
+	padding: 3px;
+}
+img {
+	border:none;
+}
+h1,h2,h3 {
+	margin: 3px 0px 3px 0px;
+	color: #425796;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 9pt;
+}
+
+a,a:link,a:visited,a:hover {
+	color: #b03933;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000000;
+}
+a.white_link {color:#FFFFFF;}
+a.white_link:hover {color:#C3CDEE; text-decoration:none;}
+
+table {
+	border-collapse: collapse;
+	vertical-align: top;
+	border-spacing:0;
+}
+
+.panel{
+	background: #eeeeee;
+}
+
+/*GROUP Контактная информация*/
+.banner {
+}
+.banner td {
+	text-align: center;
+}
+
+.nav_materials {
+	background-color: #eeeeee;
+}
+.nav_materials a, .nav_materials a:link, .nav_materials a:visited, .nav_materials a:hover {
+	color: #425796;
+	font-weight: bold;
+	font-size: 8pt;
+}
+.nav_materials a:hover {
+	color: #b03933;
+}
+
+div.greeting {
+  text-align:center;
+}
+
+div.greeting table {
+  margin: 20px 45px 20px 45px;
+  color: #425796;
+  font-weight: bold;
+}
+
+div.greeting td {
+  padding: 20px 40px 20px 40px;
+}
+
+.massMediaNotice {
+padding:15px 7px 15px 7px;
+margin: 20px 20px 20px 20px;
+text-indent:20px;
+}
+.maintxt {font-size:11pt;}
+.maintxt * {font-size:11pt;}
+.right_small {font-size:8pt; font-family:Tahoma,Verdana,sans-serif;}
+
+div {
+	/*border:#FF0000 solid 1px; */
+}
+#root {
+	width:100%;
+	padding:0;
+	height:100%
+}
+#header_wrapper{ position:relative; top:0; left:0; width:100%; }
+#header {height: 131px;}
+#leftpanel-wrapper {
+  width: 100%;
+  left:-1px;
+}
+#leftpanel {
+  background-color: #5A74C1;
+}
+
+
+
+
+/*GROUP Стили закладок новостей*/
+.news td {
+	padding: 3px;
+	padding-bottom: 10px;
+}
+.news a, .news a:link, .news a:visited, .news a:hover {
+	text-decoration: none;
+}
+
+.newsChooser a, .newsChooser a:link, .newsChooser a:visited, .newsChooser a:hover {
+	/*cursor: pointer;
+	cursor: default;*/
+}
+.newsNotChooser {
+	padding-left: 0px;
+}
+.newsNotChooser a, .newsNotChooser a:link, .newsNotChooser a:visited, .newsNotChooser a:hover {
+	border-bottom: 1px dashed #ffcc00;
+}
+.listNews {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.listNews dt span {
+	color: #999999;
+	font-weight: bold;
+}
+.listNews dd {
+	padding-bottom: 5px;
+	color: #999999;
+}
+.listNews a, .lisNews a:link, .listNews a:visited {
+	color: #b03933;
+	text-decoration: underline;
+}
+.listNews a:hover {
+	text-decoration: none;
+}
+a.newsLink, a.newsLink:link, a.newsLink:visited, a.newsLink:hover {
+	border: 0px;
+}
+a.newsLink:hover {
+	text-decoration: underline;
+}
+
+.dateInroList {
+	color: #000000; font-weight:bold;
+}
+
+/*GROUP Форумы*/
+.forum {
+	border: 1px solid #eeeeee;
+}
+.forum td {
+	border: 1px solid #eeeeee;
+}
+.forumHead {
+	background: #eeeeee;
+	font: 70%;
+}
+.forumAnswer {
+	background: #eeeeee;
+}
+
+
+
+/*GROUP Меню*/
+/*Вертикальное меню*/
+.vMenu, .vsMenu {
+	width: 100%;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 13pt;
+	cursor: default;
+}
+.vMenu a, .vsMenu a{
+	
+}
+.vsMenu {
+}
+.section {
+	padding-left: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13pt;
+}
+.vseparator {
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 1pt;
+}
+.vMenu a,.vMenu a:link,.vMenu a:visited,.vMenu a:hover {
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+}
+.vMenu a:hover {
+	color: #000000;
+}
+
+/*Вертикальное выпадающее меню*/
+.vDropMenu {
+	font: bold 8pt Verdana;
+	cursor: default;
+	border: 1px solid #cccccc;
+}
+.vDropMenu a,.vDropMenu a:link,.vDropMenu a:visited,.vDropMenu a:hover {
+	display: block;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 10px;
+	text-decoration: none;
+}
+.vDropMenu a:hover {
+	color: #000000;
+}
+
+.hDropMenuDiv {
+	z-index:10;
+}
+
+/*Горизонтальное меню*/
+.hMenu {
+	font-weight: bold;
+	font-size: 8pt;
+	cursor: default;
+}
+.hseparator {
+	padding: 0px;
+	background-color: #ffffff;
+	font: normal 1px Verdana;
+}
+.hMenu a,.hMenu a:link,.hMenu a:visited,.hMenu a:hover {
+	display: block;
+	font-weight: bold;
+	font-size: 10px;
+	text-decoration: none;
+}
+.hMenu a:hover {
+	color: #000000;
+}
+/*Горизонтальное выпадающее меню*/
+.hDropMenu {
+	width: 190px;
+	background-color: #009999;
+	border: 1px solid #ffffff;
+}
+
+.hDropMenu a,.hDropMenu a:link,.hDropMenu a:visited,.hDropMenu a:hover {
+	display: block;
+	font-size: 12px;
+	text-decoration: none;
+}
+.hDropMenu a:hover {
+	color: #000000;
+}
+
+/*GROUP Класс для отображения навигационной строки местонахождения*/
+.location {
+	font-weight: bold;
+	font-size: 8pt;
+}
+.location a,.location a:link,.location a:visited,.location a:hover {
+	color: #425796;
+	font-weight: bold;
+	text-decoration: none;
+}
+.location a:hover {
+	color: #000000;
+}
+
+/*GROUP Информеры*/
+.informer {
+}
+.headInformer {
+	background-color: #b03933;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: bold;
+}
+.contentInformer {
+	padding: 5px;
+	background-color: #ffffff;
+	border-left: 1px solid #b03933;
+	border-right: 1px solid #b03933;
+}
+.informer.listInformer a,.informer.listInformer a:link,.informer.listInformer a:visited,.informer.listInformer a:hover {
+	text-decoration: none;
+}
+.divRand {
+	background: #eeeeee;
+	font-size: 11px;
+}
+
+/*-------------*/
+#content-wrapper {
+  min-width: 647px;
+  max-width:100%; 
+}
+
+#content {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#rightsidebar-wrapper {
+  width:170px;
+}
+
+#rightsidebar {
+
+}
+
+
+#footer {
+  color: #fff;
+  float: left;
+  font-size: 90%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}

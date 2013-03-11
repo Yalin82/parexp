@@ -1,0 +1,322 @@
+html body header {
+	height: 150px;
+	background: #009999;
+	color: #fff;
+	padding-top: 10px;
+}
+
+html body header .logo {
+	position: relative;
+	float: left;
+	top: 30px;
+	left: 5px;
+	background: url("../images/logo2.png");
+	width: 254px;
+	height: 63px;
+}
+
+html body header .title {
+	height: 90px;
+	margin: 10px;
+	border-top: 1px solid #fff;
+	padding-right: 200px;
+	text-align: right;
+	line-height: 26px;
+}
+
+html body header .title .company_name {
+	font-family: Century;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+html body header .title .phone {
+	font-family: Century;
+	font-size: 19px;
+}
+
+html body header .title .email {
+	font-family: Century;
+	font-size: 19px;
+}
+
+html body header .dvorec {
+	position: relative;
+	right: 10px;
+	height: 95px;
+	width: 158px;
+	float: right;
+	top: 13px;
+	background-image: url("../images/dvorec.png");
+}
+
+html body header .running_line {
+	height: 25px;
+	margin: 10px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	font-family: "Times New Roman";
+	font-size: 16px;
+	font-weight: bold;
+}
+
+html body article {
+	margin-top: 10px;
+}
+
+html body article .left_panel .menu h3 {
+	background: #009999;
+	border-radius: 10px;
+	color: #fff;
+	padding: 15px 15px;
+	font-family: Calibri;
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 15px;
+	cursor: pointer;
+	margin: 5px 0;
+}
+
+html body article .left_panel .menu h3 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+html body article .left_panel .menu h3 a:hover {
+	text-decoration: none;
+}
+
+html body article .left_panel .menu div {
+	font-family: Calibri;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+html body article .left_panel .menu div ul {
+	list-style: none;
+	margin-left: none;
+}
+
+html body article .left_panel .menu div ul li {
+	background-image: url("../images/list_item.gif");
+	background-repeat: no-repeat;
+	background-position: left 8px;
+	padding-left: 25px;
+	display: block;
+}
+
+html body article .left_panel .menu div ul li a {
+	color: #009999;
+}
+
+html body article .left_panel .info_block {
+	background: #009999;
+	border-radius: 10px;
+	color: #fff;
+	padding: 10px;
+	margin-top: 15px;
+}
+
+html body article .left_panel .info_block .cert_example h4 {
+	font-family: Calibri;
+	font-size: 19px;
+	font-weight: bold;
+	text-align: center;
+}
+
+html body article .left_panel .info_block .cert_example .cert_image {
+	text-align: center;
+	min-height: 200px;
+}
+
+html body article .left_panel .info_block .weather_block .booked-bl-simple-city, html body article .left_panel .info_block .weather_block .booked-bl-simple-date, html body article .left_panel .info_block .weather_block .booked-bl-simple-week-list-day, html body article .left_panel .info_block .weather_block .booked-bl-simple-see10 {
+	font-family: "Times New Roman";
+	font-size: 13px !important;
+}
+
+html body article .left_panel .info_block .weather_block .bookew-weather-copy {
+	display: none;
+}
+
+html body article .left_panel .info_block .currency_rate_block {
+	text-align: center;
+}
+
+html body article .content {
+	font-family: "Times New Roman";
+	font-size: 14px;
+	line-height: 16px;
+	text-indent: 20px;
+}
+
+html body article .content h3 {
+	font-weight: bold;
+	text-align: center;
+	line-height: 18px;
+	font-size: 16px;
+}
+
+html body article .content ul {
+	list-style-position: inside;
+}
+
+html body article .content.contact-form {
+	font-weight: bold;
+	text-indent: 0;
+}
+
+html body article .content.contact-form input.error, html body article .content.contact-form select.error, html body article .content.contact-form textarea.error {
+	border-color: #E9322D;
+	box-shadow: 0 0 6px #F8B9B7;
+}
+
+html body article .content.contact-form .required {
+	color: #ff0000;
+}
+
+html body article .content.contact-form .captcha {
+	text-align: center;
+}
+
+html body article .content.contact-form .captcha a {
+	color: #000;
+}
+
+html body article .content.contact-form .captcha a:hover {
+	color: #000;
+}
+
+html body article .content.contact-form dl {
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+html body article .content.contact-form dl dt {
+	float: left;
+	width: 140px;
+}
+
+html body article .content.contact-form dl dt.hint {
+	font-size: 10px;
+	width: 100%;
+}
+
+html body article .content.contact-form dl dd {
+	margin: 0;
+}
+
+html body article .content.contact-form input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 30px;
+}
+
+html body article .right_panel .button {
+	color: #fff;
+	background: #099;
+	border-radius: 10px;
+	padding: 5px 15px;
+	font-family: Calibri;
+	margin-bottom: 5px;
+}
+
+html body article .right_panel .button h3 {
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+html body article .right_panel .button h3 a {
+	color: #fff;
+	text-decoration: none;
+}
+
+html body article .right_panel .button h3 a:hover {
+	text-decoration: none;
+}
+
+html body article .right_panel .button .button_block {
+	margin: 10px 5px;
+}
+
+html body article .right_panel .news {
+	color: #000;
+	border-radius: 10px;
+	border: 2px solid #099;
+	padding: 10px 15px;
+	font-family: Calibri;
+	font-size: 15px;
+}
+
+html body article .right_panel .news h3 {
+	text-align: center;
+	font-size: 19px;
+	color: #000;
+	font-weight: bold;
+	line-height: 15px;
+}
+
+html body article .right_panel .news h3 a {
+	color: #000;
+	text-decoration: none;
+}
+
+html body article .right_panel .news h3 a:hover {
+	text-decoration: none;
+}
+
+html body article .right_panel .news .news_block {
+	margin: 10px 5px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px dotted gray;
+}
+
+html body article .right_panel .news .news_block .date {
+	display: block;
+}
+
+html body article .right_panel .news .news_block a {
+	color: #000;
+	font-size: 13px;
+	line-height: 16px;
+}
+
+html body article .right_panel .news .news_block:last-child {
+	border-bottom: none;
+}
+
+html body article .right_panel .images_block {
+	text-align: center;
+}
+
+html body article .right_panel .images_block img {
+	padding: 10px 5px;
+}
+
+html body footer {
+	background: #009999;
+	color: #fff;
+	height: 40px;
+	margin-top: 5px;
+}
+
+html body footer .copy {
+	text-align: right;
+	line-height: 40px;
+	padding: 0 10px;
+}
+
+html body #error_block {
+	border: 1px solid red;
+	color: red;
+	padding: 10px;
+}
+
+html body #success_block {
+	border: 1px solid green;
+	color: green;
+	padding: 10px;
+}
