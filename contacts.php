@@ -35,7 +35,7 @@
 
 		if(!$errors)
 		{
-			$to_address = 'n.galkevich2@gmail.com';
+			$to_address = 'support@parexp.ru';
 			$from_address = 'contact_form@parexp.ru';
 			$from_name = 'Форма обратной связи';;
 			$email_subject = 'Сообщение с формы обратной связи';

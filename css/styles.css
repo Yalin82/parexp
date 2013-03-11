@@ -21,12 +21,12 @@ html body header .title {
 	border-top: 1px solid #fff;
 	padding-right: 200px;
 	text-align: right;
-	line-height: 26px;
+	line-height: 30px;
 }
 
 html body header .title .company_name {
 	font-family: Century;
-	font-size: 21px;
+	font-size: 19px;
 	font-weight: bold;
 }
 
@@ -87,9 +87,8 @@ html body article .left_panel .menu h3 a:hover {
 }
 
 html body article .left_panel .menu div {
-	font-family: Calibri;
-	font-size: 17px;
-	font-weight: bold;
+	font-family: Tahoma;
+	font-size: 12px;
 }
 
 html body article .left_panel .menu div ul {
