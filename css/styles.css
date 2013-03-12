@@ -109,7 +109,7 @@ html body article .left_panel .menu div ul li a {
 	color: #009999;
 }
 
-html body article .left_panel .menu div .show {
+html body article .left_panel .menu div.show {
 	display: block;
 }
 
