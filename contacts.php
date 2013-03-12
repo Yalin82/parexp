@@ -1,57 +1,56 @@
 <?php
-	session_start();
-	if (!empty($_REQUEST)) {
-		extract($_REQUEST);
-		$errors = array();
-		$attachment = '';
-		if(!trim($name))
-		{
-			$errors[] = 'name';
-		}
-		if(!trim($phone))
-		{
-			$errors[] = 'phone';
-		}
-		if(!trim($organization))
-		{
-			$errors[] = 'organization';
-		}
-		if(!trim($type))
-		{
-			$errors[] = 'type';
-		}
-		if(!trim($message))
-		{
-			$errors[] = 'message';
-		}
-		if(isset($_FILES['attachment']) && $_FILES['attachment']['size'] > 0)
-		{
-			move_uploaded_file($_FILES['attachment']['tmp_name'], dirname(__FILE__).'/upload/'.$_FILES['attachment']['name']);
-			$attachment = array('file'=>dirname(__FILE__).'/upload/'.$_FILES['attachment']['name'], 'content_type' => $_FILES['attachment']['type']);
-		}
-		if (empty($_SESSION['captcha']) || trim(strtolower($_REQUEST['captcha'])) != $_SESSION['captcha']) {
-			$errors[] = 'captcha';
-		}
+ini_set('display_errors',1);
+error_reporting(E_ALL);
+session_start();
+if (!empty($_REQUEST)) {
+	extract($_REQUEST);
+	$errors = array();
+	$attachment = '';
+	if(!trim($name))
+	{
+		$errors[] = 'name';
+	}
+	if(!trim($phone))
+	{
+		$errors[] = 'phone';
+	}
 
-		if(!$errors)
-		{
-			$to_address = 'support@parexp.ru';
-			$from_address = 'contact_form@parexp.ru';
-			$from_name = 'Форма обратной связи';;
-			$email_subject = 'Сообщение с формы обратной связи';
-			$email_body =$type.' от '. $name."($organization, $phone)\n\r".$message;
-			SendMail($to_address, $from_name, $from_address, $email_subject, $email_body, false, $attachment);
-			echo json_encode(array('status'=>'ok'));
-		}
-		else
-		{
-			echo json_encode(array('status'=>'error', 'errors'=>$errors));
-		}
+	if(!trim($type))
+	{
+		$errors[] = 'type';
+	}
+	if(!trim($message))
+	{
+		$errors[] = 'message';
+	}
+	if(isset($_FILES['attachment']) && $_FILES['attachment']['size'] > 0)
+	{
+		$attachment = array('path'=>$_FILES['attachment']['tmp_name'], 'content_type' => $_FILES['attachment']['type'],'filename' => $_FILES['attachment']['name']);
+	}
+	if (empty($_SESSION['captcha']) || trim(strtolower($_REQUEST['captcha'])) != $_SESSION['captcha']) {
+		$errors[] = 'captcha';
+	}
+
+	if(!$errors)
+	{
+		$to_address = 'info@parexp.ru';
+		$from_address = 'contact_form@parexp.ru';
+		$from_name = 'Форма обратной связи';
+		$email_subject = "Сообщение с формы обратной связи";
+
+		$email_body =$type.' от '. $name."($organization, $phone)\n\r".$message;
+		SendMail($to_address, $from_name, $from_address, $email_subject, $email_body, false, $attachment);
+		echo json_encode(array('status'=>'ok'));
 	}
 	else
 	{
-		echo json_encode(array('status'=>'error'));
+		echo json_encode(array('status'=>'error', 'errors'=>$errors));
 	}
+}
+else
+{
+	echo json_encode(array('status'=>'error'));
+}
 
 function SendMail($emailaddress, $from, $fromaddress, $emailsubject="",	$body="", $html = true,	$attachment="",	$encoding="utf-8") {//{{{
 
@@ -85,7 +84,7 @@ function SendMail($emailaddress, $from, $fromaddress, $emailsubject="",	$body=""
 
 # File for Attachment
 
-		$f_name = $attachment['file'];
+		$f_name = $attachment['path'];
 		$handle=fopen($f_name, 'rb');
 		$f_contents=fread($handle, filesize($f_name));
 		$f_contents=chunk_split(base64_encode($f_contents));//Encode The Data For Transition using base64_encode();
@@ -100,7 +99,7 @@ function SendMail($emailaddress, $from, $fromaddress, $emailsubject="",	$body=""
 		$msg .= "--".$mime_boundary.$eol;
 		$msg .= "Content-Type: ".$attachment["content_type"]."; name=\"".$f_name."\"".$eol;
 		$msg .= "Content-Transfer-Encoding: base64".$eol;
-		$msg .= "Content-Disposition: attachment; filename=\"".basename($attachment['file'])."\"".$eol.$eol; // !! This line needs TWO end of lines !! IMPORTANT !!
+		$msg .= "Content-Disposition: attachment; filename=\"".$attachment['filename']."\"".$eol.$eol; // !! This line needs TWO end of lines !! IMPORTANT !!
 		$msg .= $f_contents.$eol.$eol;
 # Setup for text OR html
 		$msg .= "Content-Type: multipart/alternative".$eol;

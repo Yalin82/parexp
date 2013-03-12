@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
     $('.accordion .head').click(function() {
         $(this).next().toggle('slow');
         return false;
-    }).next().hide();
+    });
 });
 
 $("#cert_1").fancybox({
@@ -42,10 +42,10 @@ function submit_contact_form()
             if(response.status == 'ok')
             {
                 $("#success_block_button").click();
-	            setTimeout(function(){document.location = 'http://parexp'},2000)
+//	            setTimeout(function(){document.location = 'http://parexp'},2000)
+	            document.getElementById('captcha_img').src='captcha.php?'+Math.random();
                 $('#name').removeClass('error');
                 $('#phone').removeClass('error');
-                $('#organization').removeClass('error');
                 $('#captcha').removeClass('error');
                 $('#message').removeClass('error');
             }
